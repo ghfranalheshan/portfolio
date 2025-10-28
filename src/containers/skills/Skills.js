@@ -1,3 +1,4 @@
+// src\containers\skills\Skills.js
 import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";

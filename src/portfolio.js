@@ -319,13 +319,13 @@ const achievementSection = {
 
 // Blogs Section
 
-const blogSection = {
-  title: "Blogs",
-  subtitle: "I share my learning and projects online.",
-  displayMediumBlogs: false,
-  blogs: [],
-  display: false
-};
+// const blogSection = {
+//   title: "Blogs",
+//   subtitle: "I share my learning and projects online.",
+//   displayMediumBlogs: false,
+//   blogs: [],
+//   display: false
+// };
 
 // Talks Sections
 

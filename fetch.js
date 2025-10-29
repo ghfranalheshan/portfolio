@@ -113,7 +113,9 @@ if (MEDIUM_USERNAME) {
 
       console.log(`statusCode: ${res.statusCode}`);
       if (res.statusCode !== 200) {
-        console.warn(`Medium fetch failed with status ${res.statusCode}, skipping blogs`);
+        console.warn(
+          `Medium fetch failed with status ${res.statusCode}, skipping blogs`
+        );
         return; // skip if error
       }
 

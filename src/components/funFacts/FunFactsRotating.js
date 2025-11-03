@@ -1,6 +1,6 @@
 // src\components\funFacts\FunFactsRotating.js
-import React, { useState, useEffect } from "react";
-import { factsAboutMe } from "../../portfolio";
+import React, {useState, useEffect} from "react";
+import {factsAboutMe} from "../../portfolio";
 
 const FunFactsRotating = () => {
   const [currentFactIndex, setCurrentFactIndex] = useState(0);
@@ -9,7 +9,9 @@ const FunFactsRotating = () => {
     if (!factsAboutMe.display) return;
 
     const interval = setInterval(() => {
-      setCurrentFactIndex(prevIndex => (prevIndex + 1) % factsAboutMe.facts.length);
+      setCurrentFactIndex(
+        prevIndex => (prevIndex + 1) % factsAboutMe.facts.length
+      );
     }, 3000); // rotate every 3 seconds
 
     return () => clearInterval(interval);
@@ -18,7 +20,7 @@ const FunFactsRotating = () => {
   if (!factsAboutMe.display) return null;
 
   return (
-    <div style={{ textAlign: "center", margin: "3rem 0" }}>
+    <div style={{textAlign: "center", margin: "3rem 0"}}>
       <h2>{factsAboutMe.title}</h2>
       <p>{factsAboutMe.subtitle}</p>
       <div

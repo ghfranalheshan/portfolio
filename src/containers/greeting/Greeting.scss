@@ -135,7 +135,7 @@
 }
 
 .profile-image {
-  width: 250px;  /* bigger photo */
+  width: 250px; /* bigger photo */
   height: 250px; /* bigger photo */
   border-radius: 50%;
   object-fit: cover;
@@ -144,8 +144,13 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); } /* increase vertical movement */
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  } /* increase vertical movement */
+  100% {
+    transform: translateY(0px);
+  }
 }
-

@@ -25,8 +25,7 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("")}</span>
+                {greeting.title} <span className="wave-emoji">{emoji("")}</span>
               </h1>
               <p
                 className={
@@ -53,13 +52,13 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-        <div className="greeting-image-div">
-          <img
-            src={greeting.profileImage}
-            alt="Ghfran Al Heshan"
-            className="profile-image"
-          />
-        </div>
+          <div className="greeting-image-div">
+            <img
+              src={greeting.profileImage}
+              alt="Ghfran Al Heshan"
+              className="profile-image"
+            />
+          </div>
         </div>
       </div>
     </Fade>

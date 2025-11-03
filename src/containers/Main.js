@@ -20,7 +20,7 @@ import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
-import FunFactsRotating from "../components/funFacts/FunFactsRotating"; 
+import FunFactsRotating from "../components/funFacts/FunFactsRotating";
 
 import "./Main.scss";
 
@@ -67,7 +67,7 @@ const Main = () => {
             <Twitter />
             <Podcast />
             <Profile />
-             <FunFactsRotating />
+            <FunFactsRotating />
             <Footer />
             <ScrollToTopButton />
           </>

@@ -3,7 +3,7 @@
 
 // Global Colors: _globalColor.scss
 import emoji from "react-easy-emoji";
- import splashAnimation from "./assets/lottie/splashAnimation"; // Custom splash animation
+import splashAnimation from "./assets/lottie/splashAnimation"; // Custom splash animation
 
 // Splash Screen
 const splashScreen = {
@@ -21,11 +21,12 @@ const illustration = {
 const greeting = {
   username: "Ghfran Al Heshan",
   title: "Hi, I'm Ghfran — Backend Developer",
-  subTitle: "Passionate Backend Developer creating scalable web applications and efficient APIs using Laravel, CodeIgniter, Django, and MySQL",
-  resumeLink: "https://drive.google.com/uc?export=download&id=1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu",
-   profileImage: require("./assets/images/myphoto.jpg"),
-  displayGreeting: true,
-  
+  subTitle:
+    "Passionate Backend Developer creating scalable web applications and efficient APIs using Laravel, CodeIgniter, Django, and MySQL",
+  resumeLink:
+    "https://drive.google.com/uc?export=download&id=1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu",
+  profileImage: require("./assets/images/myphoto.jpg"),
+  displayGreeting: true
 };
 
 // Social Media Links
@@ -39,29 +40,40 @@ const socialMediaLinks = {
 // Skills Section
 const skillsSection = {
   title: "What I Do",
-  subTitle: "Backend Developer building scalable, enterprise-grade applications",
+  subTitle:
+    "Backend Developer building scalable, enterprise-grade applications",
   skills: [
-    emoji("⚡ Design and develop robust backend systems and APIs for web applications"),
-    emoji("⚡ Build enterprise-grade systems including ERP, HRMS, WMS, and SaaS applications"),
-    emoji("⚡ Optimize database queries and system performance for scalable architecture"),
-    emoji("⚡ Integrate third-party services and APIs including WSO2, Stripe, and Chargebee"),
+    emoji(
+      "⚡ Design and develop robust backend systems and APIs for web applications"
+    ),
+    emoji(
+      "⚡ Build enterprise-grade systems including ERP, HRMS, WMS, and SaaS applications"
+    ),
+    emoji(
+      "⚡ Optimize database queries and system performance for scalable architecture"
+    ),
+    emoji(
+      "⚡ Integrate third-party services and APIs including WSO2, Stripe, and Chargebee"
+    ),
     emoji("⚡ Implement real-time communication using central sockets"),
-    emoji("⚡ Collaborate with front-end teams to deliver seamless full-stack solutions")
+    emoji(
+      "⚡ Collaborate with front-end teams to deliver seamless full-stack solutions"
+    )
   ],
   softwareSkills: [
-    { skillName: "PHP", fontAwesomeClassname: "fab fa-php" },
-    { skillName: "Laravel", fontAwesomeClassname: "fas fa-server" },
-    { skillName: "CodeIgniter", fontAwesomeClassname: "fas fa-cogs" },
-    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-    { skillName: "Django", fontAwesomeClassname: "fas fa-leaf" },
-    { skillName: "MySQL", fontAwesomeClassname: "fas fa-database" },
-    { skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database" },
-    { skillName: "REST API", fontAwesomeClassname: "fas fa-plug" },
-    { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
-    { skillName: "GitHub", fontAwesomeClassname: "fab fa-github" },
-    { skillName: "WSO2", fontAwesomeClassname: "fas fa-network-wired" },
-    { skillName: "Stripe", fontAwesomeClassname: "fas fa-credit-card" },
-    { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" }
+    {skillName: "PHP", fontAwesomeClassname: "fab fa-php"},
+    {skillName: "Laravel", fontAwesomeClassname: "fas fa-server"},
+    {skillName: "CodeIgniter", fontAwesomeClassname: "fas fa-cogs"},
+    {skillName: "Python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "Django", fontAwesomeClassname: "fas fa-leaf"},
+    {skillName: "MySQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "REST API", fontAwesomeClassname: "fas fa-plug"},
+    {skillName: "Git", fontAwesomeClassname: "fab fa-git-alt"},
+    {skillName: "GitHub", fontAwesomeClassname: "fab fa-github"},
+    {skillName: "WSO2", fontAwesomeClassname: "fas fa-network-wired"},
+    {skillName: "Stripe", fontAwesomeClassname: "fas fa-credit-card"},
+    {skillName: "Docker", fontAwesomeClassname: "fab fa-docker"}
   ],
   display: true
 };
@@ -88,11 +100,11 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true,
   experience: [
-    { Stack: "Backend Development", progressPercentage: "95%" },
-    { Stack: "Database Management", progressPercentage: "90%" },
-    { Stack: "API Development", progressPercentage: "85%" },
-    { Stack: "Full-Stack Collaboration", progressPercentage: "70%" },
-    { Stack: "Real-Time Systems", progressPercentage: "75%" }
+    {Stack: "Backend Development", progressPercentage: "95%"},
+    {Stack: "Database Management", progressPercentage: "90%"},
+    {Stack: "API Development", progressPercentage: "85%"},
+    {Stack: "Full-Stack Collaboration", progressPercentage: "70%"},
+    {Stack: "Real-Time Systems", progressPercentage: "75%"}
   ],
   displayCodersrank: false
 };
@@ -162,26 +174,41 @@ const bigProjects = {
     {
       image: require("./assets/images/atclogo.png"),
       projectName: "Lumytic ERP System",
-      projectDesc: "Led development of a custom SaaS ERP system for inventory, sales, and production planning.",
+      projectDesc:
+        "Led development of a custom SaaS ERP system for inventory, sales, and production planning.",
       footerLink: [
-        { name: "Dashboard", url: "https://demo.lumytic.com" },
-        { name: "Mobile App", url: "https://play.google.com/store/apps/details?id=com.lumytic.app" },
-        { name: "Inspection App", url: "https://play.google.com/store/apps/details?id=com.lumytic.inspection" }
+        {name: "Dashboard", url: "https://demo.lumytic.com"},
+        {
+          name: "Mobile App",
+          url: "https://play.google.com/store/apps/details?id=com.lumytic.app"
+        },
+        {
+          name: "Inspection App",
+          url: "https://play.google.com/store/apps/details?id=com.lumytic.inspection"
+        }
       ]
     },
     {
       image: require("./assets/images/codeshieldlogo.png"),
       projectName: "HR Management System",
-      projectDesc: "Built a Laravel-based HRMS for attendance, payroll, and employee management.",
+      projectDesc:
+        "Built a Laravel-based HRMS for attendance, payroll, and employee management.",
       footerLink: [
-        { name: "Project Details", url: "https://github.com/ghfranalheshan/HR_Management_system" }
+        {
+          name: "Project Details",
+          url: "https://github.com/ghfranalheshan/HR_Management_system"
+        }
       ]
     },
     {
       projectName: "Warehouse Management System",
-      projectDesc: "Designed a multi-user WMS with inventory, billing, and reporting modules.",
+      projectDesc:
+        "Designed a multi-user WMS with inventory, billing, and reporting modules.",
       footerLink: [
-        { name: "Project Details", url: "https://github.com/ghfranalheshan/Wherhouse-Managment-System" }
+        {
+          name: "Project Details",
+          url: "https://github.com/ghfranalheshan/Wherhouse-Managment-System"
+        }
       ]
     }
   ],
@@ -195,18 +222,23 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Freelance Money Transfer System",
-      subtitle: "Built a secure remittance system with multi-branch account management.",
+      subtitle:
+        "Built a secure remittance system with multi-branch account management.",
       imageAlt: "Freelance Project",
       image: require("./assets/images/ghfranalheshanlogo.png"),
       footerLink: []
     },
     {
       title: "Gym Management System",
-      subtitle: "Developed a full-featured system with QR check-ins and real-time chat.",
+      subtitle:
+        "Developed a full-featured system with QR check-ins and real-time chat.",
       imageAlt: "Gym System",
       image: require("./assets/images/codeshieldlogo.png"),
       footerLink: [
-        { name: "View Project", url: "https://github.com/ghfranalheshan/Gym-management-System" }
+        {
+          name: "View Project",
+          url: "https://github.com/ghfranalheshan/Gym-management-System"
+        }
       ]
     }
   ],
@@ -214,9 +246,9 @@ const achievementSection = {
 };
 
 // Blogs, Talks, Podcast (hidden for now)
-const blogSection = { display: false };
-const talkSection = { display: false };
-const podcastSection = { display: false };
+const blogSection = {display: false};
+const talkSection = {display: false};
+const podcastSection = {display: false};
 
 // Resume
 const resumeSection = {

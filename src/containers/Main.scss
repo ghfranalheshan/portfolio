@@ -1,0 +1,8 @@
+/* src\containers\Main.scss */
+@import "../_globalColor";
+
+.dark-mode {
+  background-color: $darkBackground;
+  color: white;
+  transition: "0.1s";
+}

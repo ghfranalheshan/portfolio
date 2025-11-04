@@ -1,3 +1,4 @@
+// src\components\githubProfileCard\GithubProfileCard.js
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";

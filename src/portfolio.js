@@ -3,7 +3,7 @@
 
 // Import assets
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; 
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
 const splashScreen = {
@@ -13,7 +13,7 @@ const splashScreen = {
 };
 
 // Illustration Settings
-const illustration = { animated: true };
+const illustration = {animated: true};
 
 // Greeting Section
 const greeting = {
@@ -38,7 +38,8 @@ const socialMediaLinks = {
 // Skills Section (Rewritten to be concise & impact-driven)
 const skillsSection = {
   title: "Skills & Expertise",
-  subTitle: "Specialized in backend development, real-time systems, and enterprise integrations",
+  subTitle:
+    "Specialized in backend development, real-time systems, and enterprise integrations",
   skills: [
     emoji(
       "⚡ Architecting and developing scalable backend systems and APIs for enterprise applications"
@@ -104,7 +105,10 @@ const techStack = {
     {Stack: "Database Design & Optimization", progressPercentage: "90%"},
     {Stack: "API Development & Integration", progressPercentage: "85%"},
     {Stack: "Real-Time Systems", progressPercentage: "80%"},
-    {Stack: "Collaboration / Full-Stack Understanding", progressPercentage: "70%"}
+    {
+      Stack: "Collaboration / Full-Stack Understanding",
+      progressPercentage: "70%"
+    }
   ],
   displayCodersrank: false
 };
@@ -158,7 +162,6 @@ const workExperiences = {
   ]
 };
 
-
 // Open Source Section
 const openSource = {
   showGithubProfile: true,
@@ -177,8 +180,14 @@ const bigProjects = {
         "Led development of a custom SaaS ERP for inventory, sales, and production planning with real-time updates across multi-framework platforms.",
       footerLink: [
         {name: "Dashboard", url: "https://demo.lumytic.com"},
-        {name: "Mobile App", url: "https://play.google.com/store/apps/details?id=com.lumytic.app"},
-        {name: "Inspection App", url: "https://play.google.com/store/apps/details?id=com.lumytic.inspection"}
+        {
+          name: "Mobile App",
+          url: "https://play.google.com/store/apps/details?id=com.lumytic.app"
+        },
+        {
+          name: "Inspection App",
+          url: "https://play.google.com/store/apps/details?id=com.lumytic.inspection"
+        }
       ]
     },
     {
@@ -187,7 +196,10 @@ const bigProjects = {
       projectDesc:
         "Developed Laravel-based HRMS for attendance, payroll, and employee management, reducing manual errors by 40%.",
       footerLink: [
-        {name: "Project Details", url: "https://github.com/ghfranalheshan/HR_Management_system"}
+        {
+          name: "Project Details",
+          url: "https://github.com/ghfranalheshan/HR_Management_system"
+        }
       ]
     },
     {
@@ -195,7 +207,10 @@ const bigProjects = {
       projectDesc:
         "Designed multi-user WMS with inventory, billing, and reporting modules, improving efficiency and inventory tracking.",
       footerLink: [
-        {name: "Project Details", url: "https://github.com/ghfranalheshan/Wherhouse-Managment-System"}
+        {
+          name: "Project Details",
+          url: "https://github.com/ghfranalheshan/Wherhouse-Managment-System"
+        }
       ]
     }
   ],
@@ -205,7 +220,8 @@ const bigProjects = {
 // Achievements Section (highlight measurable results)
 const achievementSection = {
   title: emoji("Achievements 🏆"),
-  subtitle: "Projects and systems demonstrating impact and technical leadership",
+  subtitle:
+    "Projects and systems demonstrating impact and technical leadership",
   achievementsCards: [
     {
       title: "Freelance Money Transfer System",
@@ -222,7 +238,10 @@ const achievementSection = {
       imageAlt: "Gym System",
       image: require("./assets/images/codeshieldlogo.png"),
       footerLink: [
-        {name: "View Project", url: "https://github.com/ghfranalheshan/Gym-management-System"}
+        {
+          name: "View Project",
+          url: "https://github.com/ghfranalheshan/Gym-management-System"
+        }
       ]
     }
   ],
@@ -233,12 +252,11 @@ const blogSection = {display: false};
 const talkSection = {display: false};
 const podcastSection = {display: false};
 
-
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Download my professional CV",
-  
+
   display: true
 };
 const factsAboutMe = {
@@ -280,13 +298,12 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-   blogSection,
+  blogSection,
   talkSection,
   podcastSection,
   factsAboutMe,
- 
   contactInfo,
   twitterDetails,
-   isHireable,
-    resumeSection
+  isHireable,
+  resumeSection
 };

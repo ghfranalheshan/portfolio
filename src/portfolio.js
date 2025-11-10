@@ -1,9 +1,9 @@
 // src\portfolio.js
-/* Updated Professional Portfolio File */
+/* Professional Portfolio File for Ghfran Al Heshan */
 
-// Global Colors: _globalColor.scss
+// Import assets
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Custom splash animation
+import splashAnimation from "./assets/lottie/splashAnimation"; 
 
 // Splash Screen
 const splashScreen = {
@@ -13,16 +13,14 @@ const splashScreen = {
 };
 
 // Illustration Settings
-const illustration = {
-  animated: true
-};
+const illustration = { animated: true };
 
 // Greeting Section
 const greeting = {
   username: "Ghfran Al Heshan",
   title: "Hi, I'm Ghfran — Backend Developer",
   subTitle:
-    "Passionate Backend Developer creating scalable web applications and efficient APIs using Laravel, CodeIgniter, Django, and MySQL",
+    "Passionate backend engineer building scalable enterprise systems, APIs, and real-time platforms using Laravel, CodeIgniter, Django, Redis, and MySQL.",
   resumeLink:
     "https://drive.google.com/uc?export=download&id=1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu",
   profileImage: require("./assets/images/myphoto.jpg"),
@@ -37,27 +35,28 @@ const socialMediaLinks = {
   display: true
 };
 
-// Skills Section
+// Skills Section (Rewritten to be concise & impact-driven)
 const skillsSection = {
-  title: "What I Do",
-  subTitle:
-    "Backend Developer building scalable, enterprise-grade applications",
+  title: "Skills & Expertise",
+  subTitle: "Specialized in backend development, real-time systems, and enterprise integrations",
   skills: [
     emoji(
-      "⚡ Design and develop robust backend systems and APIs for web applications"
+      "⚡ Architecting and developing scalable backend systems and APIs for enterprise applications"
     ),
     emoji(
-      "⚡ Build enterprise-grade systems including ERP, HRMS, WMS, and SaaS applications"
+      "⚡ Implementing real-time systems using WebSockets and Redis for multi-framework platforms"
     ),
     emoji(
-      "⚡ Optimize database queries and system performance for scalable architecture"
+      "⚡ Optimizing database queries and complex relational operations across 200+ tables"
     ),
     emoji(
-      "⚡ Integrate third-party services and APIs including WSO2, Stripe, and Chargebee"
+      "⚡ Integrating third-party services (WSO2, Stripe, Chargebee) for seamless workflows"
     ),
-    emoji("⚡ Implement real-time communication using central sockets"),
     emoji(
-      "⚡ Collaborate with front-end teams to deliver seamless full-stack solutions"
+      "⚡ Designing enterprise-grade ERP, HRMS, WMS, and SaaS applications"
+    ),
+    emoji(
+      "⚡ Collaborating with frontend and mobile teams to deliver end-to-end solutions"
     )
   ],
   softwareSkills: [
@@ -69,16 +68,17 @@ const skillsSection = {
     {skillName: "MySQL", fontAwesomeClassname: "fas fa-database"},
     {skillName: "PostgreSQL", fontAwesomeClassname: "fas fa-database"},
     {skillName: "REST API", fontAwesomeClassname: "fas fa-plug"},
-    {skillName: "Git", fontAwesomeClassname: "fab fa-git-alt"},
-    {skillName: "GitHub", fontAwesomeClassname: "fab fa-github"},
+    {skillName: "Redis", fontAwesomeClassname: "fas fa-memory"},
+    {skillName: "WebSockets", fontAwesomeClassname: "fas fa-network-wired"},
+    {skillName: "Docker", fontAwesomeClassname: "fab fa-docker"},
     {skillName: "WSO2", fontAwesomeClassname: "fas fa-network-wired"},
     {skillName: "Stripe", fontAwesomeClassname: "fas fa-credit-card"},
-    {skillName: "Docker", fontAwesomeClassname: "fab fa-docker"}
+    {skillName: "Git & GitHub", fontAwesomeClassname: "fab fa-git-alt"}
   ],
   display: true
 };
 
-// Education Section
+// Education Section (polished)
 const educationInfo = {
   display: true,
   schools: [
@@ -86,30 +86,30 @@ const educationInfo = {
       schoolName: "Damascus University",
       logo: require("./assets/images/damascuselogo.png"),
       subHeader: "B.Sc. in Information Technology Engineering",
-      duration: "2019 - 2024 (Expected)",
-      desc: "Studied computer science, software development, and backend systems.",
+      duration: "2019 - 2024",
+      desc: "Studied software development, backend systems, and enterprise application architecture.",
       descBullets: [
-        "Learned system architecture, database optimization, and object-oriented programming (OOP).",
-        "Completed projects including Warehouse Management System (WMS) and Gym Management System."
+        "Built projects including Warehouse Management System (WMS) and Gym Management System.",
+        "Learned database optimization, system scalability, and OOP principles."
       ]
     }
   ]
 };
 
-// Tech Stack / Proficiency
+// Tech Stack / Proficiency (add clear professional structure)
 const techStack = {
   viewSkillBars: true,
   experience: [
     {Stack: "Backend Development", progressPercentage: "95%"},
-    {Stack: "Database Management", progressPercentage: "90%"},
-    {Stack: "API Development", progressPercentage: "85%"},
-    {Stack: "Full-Stack Collaboration", progressPercentage: "70%"},
-    {Stack: "Real-Time Systems", progressPercentage: "75%"}
+    {Stack: "Database Design & Optimization", progressPercentage: "90%"},
+    {Stack: "API Development & Integration", progressPercentage: "85%"},
+    {Stack: "Real-Time Systems", progressPercentage: "80%"},
+    {Stack: "Collaboration / Full-Stack Understanding", progressPercentage: "70%"}
   ],
   displayCodersrank: false
 };
 
-// Work Experience
+// Work Experience (improved with metrics & impact)
 const workExperiences = {
   display: true,
   experience: [
@@ -118,11 +118,11 @@ const workExperiences = {
       company: "ATC Systematic Company",
       companylogo: require("./assets/images/atclogo.png"),
       date: "May 2024 – Present",
-      desc: "Developed and maintained backend features for a SaaS ERP system covering inventory, sales, and production planning.",
+      desc: "Developed and maintained backend features for a SaaS ERP covering inventory, sales, and production planning.",
       descBullets: [
-        "Optimized database queries and improved system response times by 30%.",
-        "Led development of a pricing module integrating Chargebee and Stripe.",
-        "Implemented central socket connections for real-time ERP updates."
+        "Optimized database queries, improving system response times by 30%.",
+        "Designed and implemented a pricing module integrating Stripe & Chargebee.",
+        "Built central WebSocket gateway for real-time ERP updates across multi-framework modules (Django, CodeIgniter, React)."
       ]
     },
     {
@@ -133,7 +133,7 @@ const workExperiences = {
       desc: "Built a Laravel-based HRMS to manage employee records, attendance, and payroll.",
       descBullets: [
         "Integrated fingerprint devices, reducing manual errors by 40%.",
-        "Developed modules for overtime, leave requests, and payroll automation."
+        "Automated overtime, leave requests, and payroll processes."
       ]
     },
     {
@@ -141,24 +141,23 @@ const workExperiences = {
       company: "Sultan Trading Company",
       companylogo: require("./assets/images/ghfranalheshanlogo.png"),
       date: "Oct 2022 – Feb 2023",
-      desc: "Built a secure money transfer system with multi-branch account management and real-time fund tracking.",
+      desc: "Built secure money transfer system with multi-branch account management and real-time fund tracking.",
       descBullets: [
-        "Designed database schema and backend logic for reliable transactions."
+        "Designed database schema and backend logic to ensure reliable transactions."
       ]
     },
     {
-      role: "Backend Developer",
-      company: "Independent / Personal Projects",
+      role: "Independent / Personal Projects",
       companylogo: require("./assets/images/ghfranalheshanlogo.png"),
       date: "Mar 2022 – Jan 2024",
-      desc: "Developed personal projects including Gym Management System and Warehouse Management System.",
+      desc: "Developed Gym Management System and Warehouse Management System.",
       descBullets: [
-        "Implemented reporting and inventory tracking modules to improve efficiency.",
-        "Delivered real-time chat and QR check-in features."
+        "Implemented reporting, inventory tracking, QR check-ins, and real-time chat features."
       ]
     }
   ]
 };
+
 
 // Open Source Section
 const openSource = {
@@ -166,64 +165,52 @@ const openSource = {
   display: true
 };
 
-// Big Projects
+// Big Projects (polished)
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "Some projects and systems I helped build or lead",
+  title: "Highlighted Projects",
+  subtitle: "Enterprise and large-scale systems I contributed to",
   projects: [
     {
       image: require("./assets/images/atclogo.png"),
       projectName: "Lumytic ERP System",
       projectDesc:
-        "Led development of a custom SaaS ERP system for inventory, sales, and production planning.",
+        "Led development of a custom SaaS ERP for inventory, sales, and production planning with real-time updates across multi-framework platforms.",
       footerLink: [
         {name: "Dashboard", url: "https://demo.lumytic.com"},
-        {
-          name: "Mobile App",
-          url: "https://play.google.com/store/apps/details?id=com.lumytic.app"
-        },
-        {
-          name: "Inspection App",
-          url: "https://play.google.com/store/apps/details?id=com.lumytic.inspection"
-        }
+        {name: "Mobile App", url: "https://play.google.com/store/apps/details?id=com.lumytic.app"},
+        {name: "Inspection App", url: "https://play.google.com/store/apps/details?id=com.lumytic.inspection"}
       ]
     },
     {
       image: require("./assets/images/codeshieldlogo.png"),
       projectName: "HR Management System",
       projectDesc:
-        "Built a Laravel-based HRMS for attendance, payroll, and employee management.",
+        "Developed Laravel-based HRMS for attendance, payroll, and employee management, reducing manual errors by 40%.",
       footerLink: [
-        {
-          name: "Project Details",
-          url: "https://github.com/ghfranalheshan/HR_Management_system"
-        }
+        {name: "Project Details", url: "https://github.com/ghfranalheshan/HR_Management_system"}
       ]
     },
     {
       projectName: "Warehouse Management System",
       projectDesc:
-        "Designed a multi-user WMS with inventory, billing, and reporting modules.",
+        "Designed multi-user WMS with inventory, billing, and reporting modules, improving efficiency and inventory tracking.",
       footerLink: [
-        {
-          name: "Project Details",
-          url: "https://github.com/ghfranalheshan/Wherhouse-Managment-System"
-        }
+        {name: "Project Details", url: "https://github.com/ghfranalheshan/Wherhouse-Managment-System"}
       ]
     }
   ],
   display: true
 };
 
-// Achievements
+// Achievements Section (highlight measurable results)
 const achievementSection = {
   title: emoji("Achievements 🏆"),
-  subtitle: "Some achievements and projects I am proud of",
+  subtitle: "Projects and systems demonstrating impact and technical leadership",
   achievementsCards: [
     {
       title: "Freelance Money Transfer System",
       subtitle:
-        "Built a secure remittance system with multi-branch account management.",
+        "Built secure remittance system supporting multi-branch transactions in real-time.",
       imageAlt: "Freelance Project",
       image: require("./assets/images/ghfranalheshanlogo.png"),
       footerLink: []
@@ -231,29 +218,27 @@ const achievementSection = {
     {
       title: "Gym Management System",
       subtitle:
-        "Developed a full-featured system with QR check-ins and real-time chat.",
+        "Developed real-time chat, QR check-ins, and reporting modules for gym management.",
       imageAlt: "Gym System",
       image: require("./assets/images/codeshieldlogo.png"),
       footerLink: [
-        {
-          name: "View Project",
-          url: "https://github.com/ghfranalheshan/Gym-management-System"
-        }
+        {name: "View Project", url: "https://github.com/ghfranalheshan/Gym-management-System"}
       ]
     }
   ],
   display: true
 };
-
 // Blogs, Talks, Podcast (hidden for now)
 const blogSection = {display: false};
 const talkSection = {display: false};
 const podcastSection = {display: false};
 
-// Resume
+
+// Resume Section
 const resumeSection = {
   title: "Resume",
-  subtitle: "Feel free to download my resume",
+  subtitle: "Download my professional CV",
+  
   display: true
 };
 const factsAboutMe = {
@@ -270,22 +255,19 @@ const factsAboutMe = {
   display: true
 };
 
-// Contact
+// Contact Info
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "Discuss a project or just want to say hi. My inbox is open.",
+  subtitle: "Let's discuss a project or opportunity. My inbox is open!",
   number: "+963 935 576 965",
   email_address: "Ghfranalheshan5@gmail.com"
 };
-
+const isHireable = false;
 // Twitter
 const twitterDetails = {
   userName: "twitter", // replace with your username if needed
-  display: true
+  display: false
 };
-
-const isHireable = false;
-
 export {
   illustration,
   greeting,
@@ -298,12 +280,13 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
+   blogSection,
   talkSection,
   podcastSection,
   factsAboutMe,
+ 
   contactInfo,
   twitterDetails,
-  isHireable,
-  resumeSection
+   isHireable,
+    resumeSection
 };

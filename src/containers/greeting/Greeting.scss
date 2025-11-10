@@ -4,13 +4,14 @@
 .main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 
@@ -20,10 +21,6 @@
 
 .subTitle {
   color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
 }
 
 .greeting-main > * {
@@ -39,6 +36,7 @@
   display: flex;
   margin-top: 40px;
 }
+
 .download-link-button {
   text-decoration: none;
 }
@@ -54,9 +52,35 @@
   line-height: 40px;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 3 / 4; /* makes it taller (portrait style) */
+  border-radius: 30%; /* softer corners instead of full circle */
+  object-fit: cover;
+  animation: float 5s ease-in-out infinite;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .wave-emoji {
@@ -91,7 +115,10 @@
   }
 }
 
-/* Media Query */
+/* ===========================
+   Responsive Design
+=========================== */
+
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
@@ -100,57 +127,44 @@
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
+  .greeting-main {
+    display: block;
     text-align: center;
   }
+
+  .button-greeting-div {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .greeting-text {
+    font-size: 32px;
+    text-align: center;
+  }
+
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;
     text-align: center;
   }
-  .greeting-main {
-    display: block;
-  }
+
   .greeting-image-div {
-    height: 256px;
+    max-width: 200px;
+    margin-top: 20px;
+  }
+
+  .profile-image {
+    max-width: 180px;
+    aspect-ratio: 3 / 4; /* keeps the tall look on mobile too */
+    border-radius: 25%;
+    object-fit: cover;
   }
 }
 
 @media (max-width: 320px) {
   .main {
     width: auto;
-  }
-}
-.greeting-image-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 300px; /* increase container size */
-  margin: 0 auto;
-}
-
-.profile-image {
-  width: 250px; /* bigger photo */
-  height: 300px; /* bigger photo */
-  border-radius: 50%;
-  object-fit: cover;
-  animation: float 4s ease-in-out infinite;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* slightly stronger shadow */
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  } /* increase vertical movement */
-  100% {
-    transform: translateY(0px);
   }
 }
